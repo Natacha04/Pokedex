@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <meta name="description" content="Découvrez et explorez les détails de vos Pokémon préférés avec notre Pokédex en ligne ! Recherchez par nom ou ID et apprenez-en plus sur leurs types, capacités, et bien plus.">
+    <link href="reset.css" rel="stylesheet">
+    <link href="poke.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <p>Explorez le monde des Pokémon</p>
+    </header>
+    <main>
+        <section id="pokedex">
+            <input type="text" id="pokemonName" placeholder="Nom ou ID du Pokémon" aria-label="Nom ou ID du Pokémon"> 
+            <button id="searchButton" aria-label="Rechercher un Pokémon">Rechercher</button>
+            <div id="pokemonDisplay" role="region" aria-live="polite">
+                <!-- Les informations du Pokémon s'afficheront ici -->
+            </div>
+            <div id="randomPokemonDisplay"></div> <!-- Section pour afficher les Pokémon aléatoires -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pokédex. Tous droits réservés.</p>
+    </footer>
+    <script src="poke.js"></script>
+</body>
+</html>
